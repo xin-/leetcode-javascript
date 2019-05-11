@@ -19,7 +19,7 @@ var myAtoi = function(str) {
             } else if (char0 == '+'){
                 result = parseInt(str.substring(1, str.length)) > 2147483647 ? parseInt(str.substring(2, str.length)) : parseInt(str.substring(1, str.length));
             } else {
-                result = parseInt(str.substring(0, str.length)) > 2147483647 ? parseInt(str.substring(1, str.length)) : parseInt(str.substring(0, str.length));
+                result = parseInt(str) > 2147483647 ? parseInt(str.substring(1, str.length)) : parseInt(str);
             }
 
         } else if (str.match(regRex)) {
