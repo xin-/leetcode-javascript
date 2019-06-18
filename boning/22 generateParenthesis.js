@@ -27,6 +27,7 @@ var getStringList = function(result, str, count1, count2, n) {
     if(count1 > n || count2 > n) {
         return;
     }
+    // 左右括号个数必须相等并且等于n
     if(count1 === n && count2 === n ) {
         result.push(str);
     }
